@@ -142,4 +142,13 @@
       <Name>YouAndIKitchen</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\beef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Chicken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pig.png" />
+  </ItemGroup>
 </Project>

@@ -34,10 +34,10 @@ namespace YouAndIKitchen.ViewModels
         {
             try
             {
-                if(Email == "admin@youandikitchen.com" && Password == "Password_7092")
+                if(Email == "admin@youandikitchen.com" && Password == "123")
                 {
                     Application.Current.MainPage = new AppShell();
-                    await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
+                    await Shell.Current.GoToAsync($"//{nameof(BeefPage)}");
                 }
                 else
                 {

@@ -493,3 +493,6 @@ C:\Users\minhk\Dev\YouAndIKitchen\YouAndIKitchen\YouAndIKitchen.Android\obj\Debu
 C:\Users\minhk\Dev\YouAndIKitchen\YouAndIKitchen\YouAndIKitchen.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\minhk\Dev\YouAndIKitchen\YouAndIKitchen\YouAndIKitchen.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\minhk\Dev\YouAndIKitchen\YouAndIKitchen\YouAndIKitchen.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\minhk\Dev\YouAndIKitchen\YouAndIKitchen\YouAndIKitchen.Android\obj\Debug\90\res\drawable\beef.png
+C:\Users\minhk\Dev\YouAndIKitchen\YouAndIKitchen\YouAndIKitchen.Android\obj\Debug\90\res\drawable\chicken.png
+C:\Users\minhk\Dev\YouAndIKitchen\YouAndIKitchen\YouAndIKitchen.Android\obj\Debug\90\res\drawable\pig.png

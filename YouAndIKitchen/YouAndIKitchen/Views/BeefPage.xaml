@@ -5,10 +5,61 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="YouAndIKitchen.Views.BeefPage"
+             xmlns:local="clr-namespace:YouAndIKitchen.ViewModels"
+             xmlns:model="clr-namespace:YouAndIKitchen.Models"
              Shell.NavBarIsVisible="False">
-    <ContentPage.Content>
+    <!--<ContentPage.Content>
         <StackLayout>
             <Label Text="Hello Xamarin.Forms!" />
         </StackLayout>
-    </ContentPage.Content>
+    </ContentPage.Content>-->
+    <RefreshView x:DataType="local:BeefViewModel" Command="{Binding LoadPageDataCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Entry x:Name="chicken" Text="{Binding Beef}" Placeholder="Beef Value"   
+                           PlaceholderColor="DimGray" HeightRequest="40"   
+                           Keyboard="Numeric"  
+                           TextColor="Black"
+                           Grid.Row="0" Grid.ColumnSpan="2"/>
+            <Button VerticalOptions="Center" Text="Submit" Command="{Binding SubmitCommand}"
+                    Grid.Row="1" Grid.ColumnSpan="2"/>
+            
+            <Label Text="{Binding GarlicPowder, StringFormat='Garlic Powder: {0:N}'}" 
+                        Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"/>
+            <Label Text="{Binding OysterSauce, StringFormat='Oyster Sauce: {0:N}'}" 
+                        Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2"/>
+            <Label Text="{Binding SoySauce, StringFormat='Soy Sauce: {0:N}'}" 
+                        Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2"/>
+            <Label Text="{Binding BlackPepper, StringFormat='Black Pepper: {0:N}'}" 
+                        Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2"/>
+            <Label Text="{Binding MSG, StringFormat='MSG: {0:N}'}" 
+                        Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2"/>
+            <Label Text="{Binding Sugar, StringFormat='Sugar: {0:N}'}" 
+                        Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2"/>
+            <Label Text="{Binding DarkSoySauce, StringFormat='Dark Soy Sauce: {0:N}'}" 
+                        Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="2"/>
+            <Label Text="{Binding VegOil, StringFormat='Veg Oil: {0:N}'}" 
+                        Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="2"/>
+            
+        </Grid>
+    </RefreshView>  
 </ContentPage>

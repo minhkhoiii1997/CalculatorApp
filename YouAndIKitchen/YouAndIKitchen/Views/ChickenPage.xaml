@@ -10,7 +10,7 @@
         <StackLayout VerticalOptions="Center">
             <Frame BackgroundColor="#BF043055" HasShadow="False">
                 <StackLayout Orientation="Vertical" Spacing="10">
-                    <Entry x:Name="beef" Text="{Binding Beef}" Placeholder="Beef Value"   
+                    <Entry x:Name="chicken" Text="{Binding Chicken}" Placeholder="Chicken Value"   
                            PlaceholderColor="White" HeightRequest="40"   
                            Keyboard="Numeric"  
                            TextColor="White"/>
